@@ -13,6 +13,10 @@
 		5F7FBFDA24E94875004BB98E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7FBFD924E94875004BB98E /* Preview Assets.xcassets */; };
 		5F7FBFE524E94875004BB98E /* raspalarm_controllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FBFE424E94875004BB98E /* raspalarm_controllerTests.swift */; };
 		5F7FBFF024E94875004BB98E /* raspalarm_controllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FBFEF24E94875004BB98E /* raspalarm_controllerUITests.swift */; };
+		5F7FC00024E94A7E004BB98E /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FBFFF24E94A7E004BB98E /* Alarm.swift */; };
+		5F7FC00324E94BB7004BB98E /* sampleAlarms.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F7FC00224E94BB7004BB98E /* sampleAlarms.json */; };
+		5F7FC00524E94C1A004BB98E /* AlarmRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FC00424E94C1A004BB98E /* AlarmRow.swift */; };
+		5F7FC00724E95B7D004BB98E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FC00624E95B7D004BB98E /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		5F7FBFEB24E94875004BB98E /* raspalarm-controllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "raspalarm-controllerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7FBFEF24E94875004BB98E /* raspalarm_controllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raspalarm_controllerUITests.swift; sourceTree = "<group>"; };
 		5F7FBFF124E94875004BB98E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F7FBFFF24E94A7E004BB98E /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		5F7FC00224E94BB7004BB98E /* sampleAlarms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleAlarms.json; sourceTree = "<group>"; };
+		5F7FC00424E94C1A004BB98E /* AlarmRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRow.swift; sourceTree = "<group>"; };
+		5F7FC00624E95B7D004BB98E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,9 @@
 		5F7FBFD124E94874004BB98E /* raspalarm-controller */ = {
 			isa = PBXGroup;
 			children = (
+				5F7FC00124E94B80004BB98E /* Resources */,
+				5F7FBFFE24E949EF004BB98E /* Models */,
+				5F7FBFFD24E94969004BB98E /* Components */,
 				5F7FBFD224E94874004BB98E /* raspalarm_controllerApp.swift */,
 				5F7FBFD424E94874004BB98E /* ContentView.swift */,
 				5F7FBFD624E94875004BB98E /* Assets.xcassets */,
@@ -128,6 +139,31 @@
 				5F7FBFF124E94875004BB98E /* Info.plist */,
 			);
 			path = "raspalarm-controllerUITests";
+			sourceTree = "<group>";
+		};
+		5F7FBFFD24E94969004BB98E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5F7FC00424E94C1A004BB98E /* AlarmRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5F7FBFFE24E949EF004BB98E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F7FBFFF24E94A7E004BB98E /* Alarm.swift */,
+				5F7FC00624E95B7D004BB98E /* Data.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5F7FC00124E94B80004BB98E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F7FC00224E94BB7004BB98E /* sampleAlarms.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +271,7 @@
 			files = (
 				5F7FBFDA24E94875004BB98E /* Preview Assets.xcassets in Resources */,
 				5F7FBFD724E94875004BB98E /* Assets.xcassets in Resources */,
+				5F7FC00324E94BB7004BB98E /* sampleAlarms.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +297,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F7FBFD524E94874004BB98E /* ContentView.swift in Sources */,
+				5F7FC00724E95B7D004BB98E /* Data.swift in Sources */,
 				5F7FBFD324E94874004BB98E /* raspalarm_controllerApp.swift in Sources */,
+				5F7FC00524E94C1A004BB98E /* AlarmRow.swift in Sources */,
+				5F7FC00024E94A7E004BB98E /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
