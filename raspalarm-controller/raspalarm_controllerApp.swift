@@ -11,7 +11,7 @@ import SwiftUI
 struct raspalarm_controllerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AlarmList()
         }
     }
 }

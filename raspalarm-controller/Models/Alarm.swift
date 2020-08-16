@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Alarm: Hashable, Codable {
+struct Alarm: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     var hours: Int

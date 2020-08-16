@@ -17,6 +17,7 @@
 		5F7FC00324E94BB7004BB98E /* sampleAlarms.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F7FC00224E94BB7004BB98E /* sampleAlarms.json */; };
 		5F7FC00524E94C1A004BB98E /* AlarmRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FC00424E94C1A004BB98E /* AlarmRow.swift */; };
 		5F7FC00724E95B7D004BB98E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FC00624E95B7D004BB98E /* Data.swift */; };
+		5F7FC00924E982A2004BB98E /* AlarmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FC00824E982A2004BB98E /* AlarmList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5F7FC00224E94BB7004BB98E /* sampleAlarms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleAlarms.json; sourceTree = "<group>"; };
 		5F7FC00424E94C1A004BB98E /* AlarmRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRow.swift; sourceTree = "<group>"; };
 		5F7FC00624E95B7D004BB98E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5F7FC00824E982A2004BB98E /* AlarmList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		5F7FBFD124E94874004BB98E /* raspalarm-controller */ = {
 			isa = PBXGroup;
 			children = (
+				5F7FC00824E982A2004BB98E /* AlarmList.swift */,
 				5F7FC00124E94B80004BB98E /* Resources */,
 				5F7FBFFE24E949EF004BB98E /* Models */,
 				5F7FBFFD24E94969004BB98E /* Components */,
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F7FBFD524E94874004BB98E /* ContentView.swift in Sources */,
+				5F7FC00924E982A2004BB98E /* AlarmList.swift in Sources */,
 				5F7FC00724E95B7D004BB98E /* Data.swift in Sources */,
 				5F7FBFD324E94874004BB98E /* raspalarm_controllerApp.swift in Sources */,
 				5F7FC00524E94C1A004BB98E /* AlarmRow.swift in Sources */,
