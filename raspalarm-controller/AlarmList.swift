@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AlarmList: View {
     @State var edition = false
+    @State private var showEditAlarm = false
     
     var body: some View {
         NavigationView {
@@ -18,9 +19,13 @@ struct AlarmList: View {
                 }
             }
             .navigationBarTitle(Text("Alarmes"))
-            .navigationBarItems(leading:  Button(edition ? "Annuler" : "Modifier") {edition.toggle()}, trailing: Button(action: {}){
-                Image(systemName: "plus")
-            })
+            .navigationBarItems(leading:  Button(edition ? "Annuler" : "Modifier") {edition.toggle()}, trailing: Button(action: {
+                showEditAlarm = true
+            }){
+                    Image(systemName: "plus")
+            }.sheet(isPresented: $showEditAlarm, content: {
+                AlarmEdition()
+            }))
         }
     }
 }
