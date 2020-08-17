@@ -8,21 +8,13 @@
 import SwiftUI
 
 struct DaySelector: View {
-    @State private var daysOfWeek = [
-        WeekDay(id: 0, label: "Lundi", abreviation: "Lu"),
-        WeekDay(id: 1, label: "Mardi", abreviation: "Ma"),
-        WeekDay(id: 2, label: "Mercredi", abreviation: "Me"),
-        WeekDay(id: 3, label: "Jeudi", abreviation: "Je"),
-        WeekDay(id: 4, label: "Vendredi", abreviation: "Ve"),
-        WeekDay(id: 5, label: "Samedi", abreviation: "Sa"),
-        WeekDay(id: 6, label: "Dimanche", abreviation: "Di")
-    ]
+    @Binding var selection: [WeekDay]
     
     var body: some View {
         HStack {
-            ForEach(daysOfWeek) { day in
+            ForEach(selection) { day in
                 Button(action: {
-                    daysOfWeek[day.id].active.toggle()
+                    selection[day.id].active.toggle()
                 }, label: {
                     Text(day.abreviation)
                 })
@@ -35,16 +27,21 @@ struct DaySelector: View {
     }
 }
 
-struct WeekDay: Identifiable {
-    var id: Int
-    var label: String
-    var abreviation: String
-    var active: Bool = false
-}
-
+/*
 struct DaySelector_Previews: PreviewProvider {
+    @State var rep = [
+        WeekDay(id: 0, abreviation: "Lu"),
+        WeekDay(id: 1, abreviation: "Ma"),
+        WeekDay(id: 2, abreviation: "Me"),
+        WeekDay(id: 3, abreviation: "Je"),
+        WeekDay(id: 4, abreviation: "Ve"),
+        WeekDay(id: 5, abreviation: "Sa"),
+        WeekDay(id: 6, abreviation: "Di")
+    ]
+    
     static var previews: some View {
-        DaySelector()
+        DaySelector(selection: rep)
             .previewLayout(.fixed(width: 400, height: 90))
     }
 }
+*/

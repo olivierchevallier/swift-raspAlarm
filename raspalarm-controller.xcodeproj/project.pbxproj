@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F6706AE24EAE736003498EE /* ModalView in Frameworks */ = {isa = PBXBuildFile; productRef = 5F6706AD24EAE736003498EE /* ModalView */; };
 		5F7FBFD324E94874004BB98E /* raspalarm_controllerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FBFD224E94874004BB98E /* raspalarm_controllerApp.swift */; };
 		5F7FBFD724E94875004BB98E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7FBFD624E94875004BB98E /* Assets.xcassets */; };
 		5F7FBFDA24E94875004BB98E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7FBFD924E94875004BB98E /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 		5F7FC00524E94C1A004BB98E /* AlarmRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FC00424E94C1A004BB98E /* AlarmRow.swift */; };
 		5F7FC00724E95B7D004BB98E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FC00624E95B7D004BB98E /* Data.swift */; };
 		5F7FC00924E982A2004BB98E /* AlarmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FC00824E982A2004BB98E /* AlarmList.swift */; };
+		5F8E319824EADB1700D1BF54 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E319724EADB1700D1BF54 /* WeekDay.swift */; };
 		5FB0FB6B24E99EAB008AB4F3 /* AlarmEdition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0FB6A24E99EAB008AB4F3 /* AlarmEdition.swift */; };
 		5FB0FB6D24E9A1C6008AB4F3 /* DaySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0FB6C24E9A1C6008AB4F3 /* DaySelector.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,7 @@
 		5F7FC00424E94C1A004BB98E /* AlarmRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRow.swift; sourceTree = "<group>"; };
 		5F7FC00624E95B7D004BB98E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		5F7FC00824E982A2004BB98E /* AlarmList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmList.swift; sourceTree = "<group>"; };
+		5F8E319724EADB1700D1BF54 /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
 		5FB0FB6A24E99EAB008AB4F3 /* AlarmEdition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEdition.swift; sourceTree = "<group>"; };
 		5FB0FB6C24E9A1C6008AB4F3 /* DaySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F6706AE24EAE736003498EE /* ModalView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +164,7 @@
 			children = (
 				5F7FBFFF24E94A7E004BB98E /* Alarm.swift */,
 				5F7FC00624E95B7D004BB98E /* Data.swift */,
+				5F8E319724EADB1700D1BF54 /* WeekDay.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +193,9 @@
 			dependencies = (
 			);
 			name = "raspalarm-controller";
+			packageProductDependencies = (
+				5F6706AD24EAE736003498EE /* ModalView */,
+			);
 			productName = "raspalarm-controller";
 			productReference = 5F7FBFCF24E94874004BB98E /* raspalarm-controller.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +267,9 @@
 				Base,
 			);
 			mainGroup = 5F7FBFC624E94874004BB98E;
+			packageReferences = (
+				5F6706AC24EAE736003498EE /* XCRemoteSwiftPackageReference "modal-view" */,
+			);
 			productRefGroup = 5F7FBFD024E94874004BB98E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -308,6 +319,7 @@
 				5F7FBFD324E94874004BB98E /* raspalarm_controllerApp.swift in Sources */,
 				5F7FC00524E94C1A004BB98E /* AlarmRow.swift in Sources */,
 				5FB0FB6D24E9A1C6008AB4F3 /* DaySelector.swift in Sources */,
+				5F8E319824EADB1700D1BF54 /* WeekDay.swift in Sources */,
 				5F7FC00024E94A7E004BB98E /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +640,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F6706AC24EAE736003498EE /* XCRemoteSwiftPackageReference "modal-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/diniska/modal-view";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F6706AD24EAE736003498EE /* ModalView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F6706AC24EAE736003498EE /* XCRemoteSwiftPackageReference "modal-view" */;
+			productName = ModalView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F7FBFC724E94874004BB98E /* Project object */;
 }

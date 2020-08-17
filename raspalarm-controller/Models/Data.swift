@@ -7,7 +7,6 @@
 
 import UIKit
 import SwiftUI
-import CoreLocation
 
 let sampleAlarms: [Alarm] = load("sampleAlarms.json")
 
